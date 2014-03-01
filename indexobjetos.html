@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>JavaScript</title>
+		<script>
+		/*pedrir nombre apellido*/
+		var persona = new Object();
+		persona.nombre="Daniela";
+		persona.apellido="Aguirre";
+		persona.hablar = function () {
+			document.write("<p>Hola soy daniela</p>");
+		  
+		};
+		persona.hablar();
+		
+		document.write("<p>Nombre:" + persona.nombre + "</p>");
+		document.write("<p>Apellido:" + persona.apellido + "</p>");
+		/*declarar un objeto con notacion JSON
+		 (javaScript object Notation)*/
+		var alumno = {
+			
+		    nombre: "Pedrito",
+		    apellido: "Perez",
+		    hablar: function(){
+		          document.write("<p>Yosoy Piter</p>");	
+		    }
+		    };
+		    alumno.nombre = "Juanito";
+		    alumno.hablar();
+		    document.write("<p>Alumno:" + alumno.nombre +"</p>");
+		    /*variante de JSON*/
+		   var carro = {};
+		   carro.modelo ="1968";
+		   carro.marca = "Ford";
+		   carro.arrancar = function () {
+		   	document.write("<p>Carro:" +carro.modelo + "</p>");
+			 
+		   };
+				
+		
+			
+		</script>
+	
+	</head>
+	<body>
+		<p>Aprendiendo JavaScript</p>
+	</body>
+</html>

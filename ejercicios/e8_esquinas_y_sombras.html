@@ -5,12 +5,18 @@
 		<title>Ejercicio 8</title>
 		
 		<style type="text/css">
+			
 			body {
 				background-color: #7673d9;
 			}
 			
 			#titulo{
 				color: #61b7cf;
+				text-shadow: -3px 4px 3px white;
+                -webkit-text-shadow: -3px 4px 3px white;
+                -moz-text-shadow: -3px 4px 3px white;                
+                -o-text-shadow: -3px 4px 3px white;
+                
 			}
 			
 			#caja-contenido{
@@ -24,13 +30,39 @@
 				color: #5c0dac;
 				background-color:#ECF6CB;
 				width: 400px;
+				padding: 20;
+				margin-bottom: 30px; /*margen izquierdo de la caja*/
+				margin-left: auto;  /* centrar caja*/
+				margin-right: auto;
+				text-align:justify; /* justificar texto*/
+				/*sombras de cajas*/
+				box-shadow: 0px 0px 20px 10px gray;
+				-webkit-box-shadow: 0px 0px 20px 10px gray;
+				-moz-box-shadow: 0px 0px 5px 20px gray;
+				-o-box-shadow: 0px 0px 5px 20px gray;
+				
 			}
 			
 			#pie-pagina{
 				background-color: #5ec4cd;
 				color: #015c65;
+				
+				text-align:center;
 			}
-
+			.caja-presentacion2, #pie-pagina{
+				border-radius: 20px;
+				-moz-border-radius: 20px;
+				-webkit-border-radius: 20px;
+				-o-border-radius: 20px;
+				
+			}
+            .caja-presentacion1, .caja-presentacion3{
+            	border-radius: 15px 15px 0px 0px;
+            	-webkit-border-radius: 15px 15px 0px 0px;
+            	-moz-border-radius: 15px 15px 0px 0px;
+                -o-border-radius: 15px 15px 0px 0px;
+            	
+            }
 		</style>
 	</head>
 	<body>

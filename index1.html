@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>JavaScript</title>
+		<script>
+		
+		var nombreUsuario= prompt("Como te llamas");
+		document.write(nombreUsuario);
+		/*declaramos funciones*/
+		function escribir (texto) { /* esta funcion solo escribe texto en el body*/
+			document.write(texto);
+		  
+		}
+				escribir("funcion!!!");
+				/*funciones anonimas (en este lenjuage podemos declarar funciones en una variable)*/
+				var funcion_sumar;
+				var funcion_multiplicar;
+				var resultado;
+				funcion_sumar= function(a,b){
+					resultado = a+b;
+					document.write(" sumar " + resultado);
+					
+				};/*el punto y como es por qe se inicializa una variable*/
+				funcion_multiplicar = function (a,b) {
+					resultado= a*b;
+				    document.write(" multiplicacion "+ resultado); 
+				};
+				/*funcion_sumar(2,3);*/
+				/*una funcion que recibe como parametro otra funcion*/
+				var operacion;
+				operacion = function (unaFuncion) {
+				  unaFuncion(3,3);
+				  
+				};
+				  
+				operacion(funcion_sumar);
+				operacion(funcion_multiplicar);
+		
+			
+		</script>
+	
+	</head>
+	<body>
+		
+	</body>
+</html>
